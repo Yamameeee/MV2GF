@@ -1,0 +1,41 @@
+seed_everything: 80085
+trainer:
+  accelerator: gpu
+  devices: 1
+  max_epochs: 10
+  accumulate_grad_batches: 16
+  gradient_clip_val: 0.5
+  check_val_every_n_epoch: 1
+  log_every_n_steps: 5
+  callbacks:
+    - class_path: LearningRateMonitor
+      init_args:
+        logging_interval: step
+    - class_path: ModelCheckpoint
+      init_args:
+        save_last: true
+        save_top_k: -1
+        filename: "model-{epoch:02d}"
+model:
+  arch: "resnet18"
+  pool: "max" 
+  decoder: "unet"
+  input_reduce: 1.5
+  feat_dim: 256
+  da3_height: 280
+  da3_width: 504
+  da3_dim: 1536
+  voxel_grid_xy: 0.05
+  voxel_grid_z: 0.5
+  learning_rate: 0.001
+  min_learning_rate: 0.000001
+  div_factor: 25
+  warmup_iter_rate: 0.2
+data:
+  class_path: gmvd.GMVDDataModule
+  init_args:
+    input_reduce: 1.5
+    world_reduce: 4
+    img_reduce: 4
+    world_kernel_size: 10
+    img_kernel_size: 10
