@@ -271,9 +271,9 @@ class GMVDDataModule(pl.LightningDataModule):
                 path = os.path.join(self.data_dir, str(data_row[1])[12:])
 
                 if str(data_row[1]).split('/')[2] == 'DATASETS':
-                    da3_path = os.path.join(self.da3_dir, str(data_row[1])[21:], 'C1')
+                    da3_path = os.path.join(self.da3_dir, str(data_row[1])[21:])
                 elif str(data_row[1]).split('/')[2] == 'detect':
-                    da3_path = os.path.join(self.da3_dir, str(data_row[1])[19:], 'C1')
+                    da3_path = os.path.join(self.da3_dir, str(data_row[1])[19:])
                 else:
                     NotImplementedError
 
