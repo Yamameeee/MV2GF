@@ -8,17 +8,6 @@
 </div>
 
 
-## Citation
-```bibtex
-@inproceedings{yamane2026mv2gf,
-    title={MV2GF: Multi-view Pedestrian Detection with a Visual Geometric Foundation Model},
-    author={Taiga Yamane and Satoshi Suzuki and Ryo Masumura and Shota Orihashi and Tomohiro Tanaka and Mana Ihori and Naoki Makishima},
-    booktitle={ECCV},
-    year={2026}
-}
-```
-
-
 ## Updates
 
 - [2026/08]: The sample training code of MV2GF on one sequence in GMVD are available.
@@ -112,6 +101,17 @@ In this repository, we release an sample training code of MV2GF on one sequence 
     ```shell
     python trainer.py fit -c config.yml --data.init_args.csv_path [PATH to train_datapath.csv] --data.init_args.data_dir [PATH to GMVD_DATA] --data.init_args.da3_dir [PATH to DA3_OUTPUT]
     ```
+
+
+## Citation
+```bibtex
+@inproceedings{yamane2026mv2gf,
+    title={MV2GF: Multi-view Pedestrian Detection with a Visual Geometric Foundation Model},
+    author={Taiga Yamane and Satoshi Suzuki and Ryo Masumura and Shota Orihashi and Tomohiro Tanaka and Mana Ihori and Naoki Makishima},
+    booktitle={ECCV},
+    year={2026}
+}
+```
 
 
 ## License
