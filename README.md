@@ -22,8 +22,9 @@ This repository includes an sample training code of MV2GF on one sequence in GMV
 
 
 ## Updates
-- [2026/08]: The example training code of MV2GF on GMVD are available.
-- [2026/07]: MV2GF is selected as an oral presentation in ECCV 2026.
+
+- [2026/08]: The sample training code of MV2GF on one sequence in GMVD are available.
+- [2026/07]: MV2GF is selected as an oral (spotlight) presentation in ECCV 2026.
 - [2026/06]: MV2GF is accepted to ECCV 2026.
 
 
