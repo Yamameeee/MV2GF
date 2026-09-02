@@ -1,0 +1,15 @@
+einops==0.8.1
+numpy==1.26.4
+opencv-python==4.7.0.72
+kornia==0.6.11
+scipy==1.16.3
+botocore==1.27.59
+boto3==1.24.59
+s3transfer==0.6.2
+lightning-cloud==0.5.70
+lightning[extra]==2.0.2
+tensorboard==2.16.2
+jupyter
+huggingface-hub==0.17.3
+timm==0.9.2
+setuptools==68.2.2

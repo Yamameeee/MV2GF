@@ -1,2 +1,2 @@
-*.txt
+env.txt
 lightning_logs/
