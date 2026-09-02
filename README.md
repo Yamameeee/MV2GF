@@ -112,6 +112,15 @@ In this repository, we release an sample training code of MV2GF on one sequence 
     year={2026}
 }
 ```
+or
+```bibtex
+@article{yamane2026mv2gf,
+  title={MV2GF: Multi-view Pedestrian Detection with a Visual Geometric Foundation Model},
+  author={Yamane, Taiga and Suzuki, Satoshi and Masumura, Ryo and Orihashi, Shota and Tanaka, Tomohiro and Ihori, Mana and Makishima, Naoki},
+  journal={arXiv preprint arXiv:2608.20639},
+  year={2026}
+}
+```
 
 
 ## License
