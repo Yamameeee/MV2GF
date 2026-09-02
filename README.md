@@ -18,13 +18,14 @@
 ## Overview
 **MV2GF** is a multi-view pedestrian detection method that leverages a visual geometric foundation model, such as Depth Anything 3 or MapAnything.
 By leveraging general-purpose geometric features and predicted 3D pointmaps from the foundation model, MV2GF generalized better to camera configurations not included training data than previous multi-view pedestrian detection methods.
-In this repository, we release an sample training code of MV2GF on one sequence in GMVD datasets for understanding our method.
+In this repository, we include an sample training code of MV2GF on one sequence in GMVD dataset for understanding our method.
 
 
 ## Quick Start
 1. Create a new Conda environment.
     ```shell
     conda create --name mv2gf python=3.12 -y
+    conda activate mv2gf
    ```
 2. Install [PyTorch](https://pytorch.org/get-started/locally/) and torchvision with CUDA support.
     ```shell
@@ -32,6 +33,7 @@ In this repository, we release an sample training code of MV2GF on one sequence 
    ```
 3. Clone this repository and install remaining dependenies.
     ```shell
+    git clone git@github.com:Yamameeee/MV2GF.git
     cd MV2GF
     pip install -r requirements.txt
     pip install torch-cluster -f https://data.pyg.org/whl/torch-2.2.2+cu121.html
