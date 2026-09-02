@@ -8,8 +8,6 @@
 </div>
 
 
-This repository includes an sample training code of MV2GF on one sequence in GMVD datasets for understanding our method. 
-
 ## Citation
 ```bibtex
 @inproceedings{yamane2026mv2gf,
@@ -31,7 +29,7 @@ This repository includes an sample training code of MV2GF on one sequence in GMV
 ## Overview
 **MV2GF** is a multi-view pedestrian detection method that leverages a visual geometric foundation model, such as Depth Anything 3 or MapAnything.
 By leveraging general-purpose geometric features and predicted 3D pointmaps from the foundation model, MV2GF generalized better to camera configurations not included training data than previous multi-view pedestrian detection methods.
-In this repository, we release the training code of MV2GF on GMVD-D.
+In this repository, we release an sample training code of MV2GF on one sequence in GMVD datasets for understanding our method.
 
 
 ## Quick Start
